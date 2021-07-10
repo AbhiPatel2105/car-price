@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car deatails</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/car.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <div class="container">
+            <div class = "container1">
+                car name: <br>
+                <input type="text" name="car_name">
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class = "container1">
+
+                model year(in which year car was manifactured): <br>
+                <input type="number" name="year">
+            </div>
+        </div>
+        <div class="container">
+            <div class = "container1">
+            present price(showroom price in lakhs): <br>
+            <input type="float" name="present_price">
+            </div>
+        </div>
+        <div class="container">
+            <div class = "container1">
+            Kilometer Driven: <br>
+            <input type="number" name="kilometer_driven">
+            </div>
+        </div>
+        <div class="container">
+            <div class = "container1">
+            Fuel Type: <br>
+            <select name="fuel_type" id="">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="CNG">CNG</option>
+            </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class = "container1">
+            Seller Type: <br>
+            <select name="seller_type" id="">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class = "container1">
+            Transmision: <br>
+            <select name="transmission" id="">
+                <option value="Manual">Manual</option>
+                <option value="Automatic">Automatic</option>
+            </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class = "container1">
+            Owner: <br>
+            <select name="owner" id="">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            </div>
+        </div>
+        <center>
+            <div class='button'>
+                <input type="submit" value="Calculate the price" >
+            </div>
+        </center>
+        <center>
+            <h3>
+                {{prediction}} 
+            </h3>
+        </center>
+    </form>
+</body>
+</html>

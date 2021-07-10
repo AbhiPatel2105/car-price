@@ -1,0 +1,26 @@
+.container{
+    width: auto;
+    border: 2px solid blue;
+    margin: 2px;
+    font-size: large;
+    background-color: rebeccapurple;
+}
+.container1{
+    width: auto;
+    border: 2px solid blue;
+    color: red;
+    background-color: yellow;
+    margin: 2px;
+    padding: 2px;
+    font-weight: bold;
+}
+input{
+    width: auto;
+}
+button{
+    font-size: larger;
+    color: black;
+    background-color: rgb(108, 238, 108);
+    border-radius: 2px;
+    border: solid slateblue;
+}
